@@ -3,3 +3,4 @@ description: The most important engineering news of the day, explained simply.
 theme: minima
 timezone: Asia/Kolkata
 show_excerpts: false
+exclude: [INSTRUCTIONS.md, feeds.md, README.md]
