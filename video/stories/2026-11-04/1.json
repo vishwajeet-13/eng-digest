@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"Netflix taught AI to find slow code in its own services.","kicker":"Netflix","big":"AI vs slow code","emoji":"🐢","tone":"accent"},
+{"scene":"compare","text":"Before, experts read flame graphs by hand. Now an AI reads the data for them.","title":"Finding slow code","left":{"icon":"🧑‍💻","label":"By hand","points":["Read flame graphs","Needs experts"]},"right":{"icon":"🤖","label":"With AI","points":["Reads profile data","Scans all the time"]}},
+{"scene":"flow","text":"The agent profiles a live service and looks only at Netflix's own code.","title":"The pipeline","steps":[{"icon":"📊","label":"Profile"},{"icon":"🤖","label":"AI finds issue"},{"icon":"🧪","label":"Tests"},{"icon":"🐤","label":"Canary"}]},
+{"scene":"stats","text":"One text-matching pattern used 46 percent of a service's CPU. A lookup table made it 22 times faster.","title":"Regex on the hot path","items":[{"value":46,"suffix":"%","label":"CPU used","tone":"red"},{"value":22,"suffix":"x","label":"faster after fix","tone":"green"}]},
+{"scene":"stats","text":"Another service spent 66 percent of its CPU looking up a counter, while real work used 0.3 percent.","title":"Counter lookups","items":[{"value":66,"suffix":"%","label":"CPU on lookups","tone":"red"},{"value":0.3,"suffix":"%","label":"real work","tone":"green"}]},
+{"scene":"cards","text":"Every fix is tested on a small canary copy, then a human reviews it.","title":"Safety first","items":[{"icon":"🐤","label":"Canary","sub":"small live test"},{"icon":"👩‍💻","label":"Human review","sub":"final say"}]},
+{"scene":"bullets","text":"Good known patterns are saved in Git, so no team repeats the same hunt.","title":"Takeaways","points":[{"icon":"🤖","text":"AI finds slow code"},{"icon":"✅","text":"Humans approve fixes"},{"icon":"📚","text":"Patterns shared in Git"}]}
+]}

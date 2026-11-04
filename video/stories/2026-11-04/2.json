@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"Meta runs more than twenty thousand features to rank ads.","kicker":"Meta","big":"20,000+","emoji":"📈","note":"features per request","tone":"accent"},
+{"scene":"cards","text":"A feature is a small fact a model uses, like clicks in the last seven days.","title":"What is a feature?","items":[{"icon":"🖱️","label":"Clicks, 7 days"},{"icon":"👀","label":"Views, 7 days"},{"icon":"➗","label":"Click rate"}]},
+{"scene":"compare","text":"Features were bundled in one shared graph, so one error blocked every release.","title":"The old way","left":{"icon":"📦","label":"One bundle","points":["Shared work, once","One bad feature blocks all"]},"right":{"icon":"🚢","label":"F3 Lightning","points":["Each ships alone","Bad one waits"]}},
+{"scene":"flow","text":"At startup, the system finds shared work and puts it in a single order.","title":"Startup work","steps":[{"icon":"🔖","label":"Stable IDs"},{"icon":"🧩","label":"Merge shared work"},{"icon":"📋","label":"One plan"}]},
+{"scene":"cards","text":"All results sit in one memory buffer, so the CPU reads them quickly.","title":"Memory trick","items":[{"icon":"🧠","label":"One buffer","sub":"results side by side"},{"icon":"⚡","label":"Direct lookup","sub":"array index"}]},
+{"scene":"stats","text":"New features now reach production about three point six times faster, at no extra compute cost.","title":"The result","items":[{"value":3.6,"suffix":"x","label":"faster to production","tone":"green"}]},
+{"scene":"bullets","text":"Separate shipping from running, and do repeated work once at startup.","title":"Takeaways","points":[{"icon":"🚢","text":"Release each piece alone"},{"icon":"⏱️","text":"Do fixed work at startup"},{"icon":"🧠","text":"Memory layout matters"}]}
+]}
