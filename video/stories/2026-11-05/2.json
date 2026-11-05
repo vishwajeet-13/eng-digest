@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"Figma runs tens of thousands of sealed boxes so AI-written code can run safely.","kicker":"Figma","big":"Safe sandboxes","emoji":"📦","tone":"accent"},
+{"scene":"cards","text":"A sandbox is a sealed space for untrusted code. Figma's platform for them is called Nimbus.","title":"Key ideas","items":[{"icon":"📦","label":"Sandbox","sub":"sealed space"},{"icon":"☁️","label":"Nimbus","sub":"Figma's platform"}]},
+{"scene":"flow","text":"A team writes a short settings file. Nimbus picks a cloud provider and hands back a ready sandbox.","title":"Getting a sandbox","steps":[{"icon":"📝","label":"Settings file"},{"icon":"☁️","label":"Pick provider"},{"icon":"🔥","label":"Warm sandbox"},{"icon":"✅","label":"Ready"}]},
+{"scene":"stats","text":"Keeping sandboxes warm and waiting cut start-up time by 90 percent. Availability rose from 99 to 99.95 percent.","title":"Warm pool results","items":[{"value":90,"suffix":"%","label":"faster start","tone":"green"},{"value":99.95,"suffix":"%","label":"availability","tone":"green"}]},
+{"scene":"compare","text":"Code in a sandbox may read from any site, but can only send data to hosts on an approved list.","title":"Network rules","left":{"icon":"🚫","label":"Other sites","points":["Read only","No sending data"]},"right":{"icon":"✅","label":"Approved hosts","points":["Read","Send"]}},
+{"scene":"cards","text":"Secrets are scrambled inside the box. The real value is swapped in only when going to the right place.","title":"Protecting secrets","items":[{"icon":"🔐","label":"Scrambled secret","sub":"inside the box"},{"icon":"🎯","label":"Swapped at exit","sub":"only to right host"}]},
+{"scene":"bullets","text":"Running AI code safely needs strict boxes that start fast and survive provider outages.","title":"Takeaways","points":[{"icon":"📦","text":"Seal untrusted code"},{"icon":"🔥","text":"Keep warm boxes ready"},{"icon":"🔀","text":"Switch providers if one fails"}]}
+]}

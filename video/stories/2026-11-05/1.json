@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"Anthropic's AI writes so much code that Git could not keep up, so they built Scion.","kicker":"Anthropic","big":"Beyond Git","emoji":"🧰","tone":"accent"},
+{"scene":"stats","text":"Merged changes grew from about 2,500 a day in May to more than 30,000 a day by September.","title":"Code changes per day","items":[{"value":2500,"label":"May 2026","tone":"accent"},{"value":30000,"prefix":">","label":"September","tone":"red"}]},
+{"scene":"stats","text":"Automated systems do about 25 million checkouts a day. Each one copies a version of the code to a worker.","title":"Checkouts","items":[{"value":25,"suffix":"M","label":"checkouts a day","tone":"red"}]},
+{"scene":"compare","text":"With Git, every worker keeps its own big copy. Anthropic ran several hundred mirror servers to share them.","title":"Sharing code","left":{"icon":"📚","label":"Git way","points":["Full local copies","Hundreds of mirrors"]},"right":{"icon":"🏛️","label":"Scion way","points":["Ask the server","Small local cache"]}},
+{"scene":"flow","text":"A job asks a local helper first. If it misses, it asks a regional cache, then the main servers.","title":"Layers of cache","steps":[{"icon":"🤖","label":"Job"},{"icon":"📦","label":"Local cache"},{"icon":"🌎","label":"Regional cache"},{"icon":"🗄️","label":"Main servers"}]},
+{"scene":"cards","text":"Files are named by a fingerprint of their contents, so the same name always means the same data.","title":"Content-addressing","items":[{"icon":"🔑","label":"Fingerprint name","sub":"same name, same data"},{"icon":"🔒","label":"Never changes","sub":"easy to cache"}]},
+{"scene":"bullets","text":"When AI writes code fast, the tools that store and share code must scale too.","title":"Takeaways","points":[{"icon":"🤖","text":"AI speeds up coding"},{"icon":"🏛️","text":"Server does the heavy work"},{"icon":"📦","text":"Layered caches share files"}]}
+]}

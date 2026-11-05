@@ -9,7 +9,7 @@ mkdir -p "out/$D"
 for s in stories/"$D"/*.json; do
   n=$(basename "$s" .json)
   $PY build.py "$s" "public/$D/$n.wav" "out/$D/$n.props.json"
-  npx remotion render Explainer "out/$D/$n.mp4" --props="out/$D/$n.props.json" --crf=28 --log=error
+  npx remotion render Explainer ${BROWSER_EXE:+--browser-executable=$BROWSER_EXE} "out/$D/$n.mp4" --props="out/$D/$n.props.json" --crf=28 --log=error
   ffmpeg -v error -y -ss 2 -i "out/$D/$n.mp4" -frames:v 1 -q:v 4 "out/$D/$n.jpg"
 done
 ls -la "out/$D"
