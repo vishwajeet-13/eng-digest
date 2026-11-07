@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"A food-ordering platform cut its server bill by up to sixty-four percent.","kicker":"OrderServ on AWS","big":"-64%","emoji":"🍔","note":"compute cost","tone":"green"},
+{"scene":"compare","text":"Before, every brand got its own cluster with 21 services. Five brands meant 105 services.","title":"Before and after","left":{"icon":"🏢","label":"One cluster each","points":["105 services","Idle capacity"]},"right":{"icon":"🤝","label":"One shared cluster","points":["21 services","Shared capacity"]}},
+{"scene":"flow","text":"A shared code library tags each request with a brand ID and sends it only to that brand's data.","title":"Keeping brands apart","steps":[{"icon":"📱","label":"Request"},{"icon":"🏷️","label":"Brand ID"},{"icon":"🗄️","label":"Brand's data"}]},
+{"scene":"cards","text":"Warm pools keep prepared servers stopped and ready, so extra capacity can start fast.","title":"Warm pool","items":[{"icon":"🔥","label":"Warm pool","sub":"pre-started, then stopped","stamp":"READY","tone":"amber"}]},
+{"scene":"stats","text":"New capacity now arrives in thirty to sixty seconds, instead of five to seven minutes.","title":"Scaling time","items":[{"value":7,"suffix":" min","label":"before","tone":"red"},{"value":60,"suffix":" sec","label":"after","tone":"green"}]},
+{"scene":"stats","text":"Compute cost fell by forty-seven to sixty-four percent, depending on the savings plan.","title":"Cost savings","items":[{"value":47,"suffix":"%","label":"1-year plan","tone":"green"},{"value":64,"suffix":"%","label":"3-year plan","tone":"green"}]},
+{"scene":"bullets","text":"Sharing saves money, but isolation between customers must be built carefully in code.","title":"Takeaways","points":[{"icon":"💰","text":"Share infrastructure"},{"icon":"🔒","text":"Isolate in code"},{"icon":"⚡","text":"Pre-warm for spikes"}]}
+]}
