@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"Nvidia's Nemotron language model has thirty billion parameters, but uses only about three billion for each word.","kicker":"Nvidia Nemotron","big":"30B → 3B","emoji":"🧠","note":"used per word","tone":"accent"},
+{"scene":"compare","text":"Normal models get slower and need more memory as the text gets longer, because they keep checking everything before.","title":"The problem","left":{"icon":"🐢","label":"Long text","points":["More memory","More checks"]},"right":{"icon":"🚀","label":"Nemotron","points":["Small fixed notes","Fewer checks"]}},
+{"scene":"cards","text":"Mamba layers keep a small running summary, like notes. A few attention layers can still look back at earlier words.","title":"Two kinds of layers","items":[{"icon":"📝","label":"Mamba","sub":"small fixed notes"},{"icon":"👀","label":"Attention","sub":"looks back"}]},
+{"scene":"grid","text":"Mixture of experts: the model has 128 small experts, and a router picks just six for each word.","title":"6 of 128 experts","total":10,"highlighted":1,"icon":"⚪","highlightIcon":"🟢","tone":"green"},
+{"scene":"stats","text":"Smaller numbers shrink the model from about sixty-six gigabytes to about twenty-two.","title":"Smaller storage","items":[{"value":66,"suffix":" GB","label":"before","tone":"red"},{"value":22,"suffix":" GB","label":"after","tone":"green"}]},
+{"scene":"flow","text":"It also guesses several words ahead, and the main model checks the guesses in one pass.","title":"Speed trick","steps":[{"icon":"✍️","label":"Draft words"},{"icon":"✅","label":"Verify"},{"icon":"⏩","label":"Move ahead"}]},
+{"scene":"bullets","text":"AI agents call a model dozens of times per task, so cheaper answers make them more practical.","title":"Takeaways","points":[{"icon":"🧩","text":"Mix layer types"},{"icon":"👥","text":"Use few experts per word"},{"icon":"💸","text":"Cheaper agents"}]}
+]}

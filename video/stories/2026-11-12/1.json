@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"Shopify rewrote its whole mobile app in twelve weeks, and AI agents wrote most of the code.","kicker":"Shopify","big":"12 weeks","emoji":"📱","note":"300+ screens, 30 engineers"},
+{"scene":"compare","text":"They moved from one shared React Native codebase to two native apps, Swift and Kotlin.","title":"The move","left":{"icon":"🔀","label":"React Native","points":["One shared codebase"]},"right":{"icon":"📲","label":"Native apps","points":["Swift and Kotlin"]}},
+{"scene":"cards","text":"First a small group built the rails: one shared design, fast tests, and checks that fail when code drifts.","title":"Build the rails first","items":[{"icon":"🏗️","label":"Shared design"},{"icon":"⚡","label":"Fast checks"},{"icon":"🚧","label":"Drift alarms"}]},
+{"scene":"flow","text":"The old app was the spec. Agents took small steps and checked each one against it.","title":"Small steps","steps":[{"icon":"🤖","label":"Agent step"},{"icon":"📱","label":"Compare to old app"},{"icon":"✅","label":"Pass"}]},
+{"scene":"flow","text":"Once code was quick, the slow parts moved. Agents review first, and humans decide last.","title":"New bottlenecks","steps":[{"icon":"💻","label":"Machines"},{"icon":"👀","label":"Review"},{"icon":"🔀","label":"Merging"},{"icon":"🤝","label":"Teamwork"}]},
+{"scene":"stats","text":"Android launch time dropped about half, and crash-free sessions rose to nearly all.","title":"Android results","items":[{"value":50,"prefix":"~","suffix":"%","label":"faster launch","tone":"green"},{"value":99.98,"suffix":"%","label":"crash-free sessions","tone":"green"}]},
+{"scene":"bullets","text":"The lesson: with fast AI code, the real work is the system around it.","title":"Takeaways","points":[{"icon":"🧱","text":"Build checks first"},{"icon":"🔬","text":"Prefer small steps"},{"icon":"🧑‍💻","text":"Humans judge the result"}]}
+]}

@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"How does Netflix make sure a show's description is true?","kicker":"Netflix","big":"Fact-check","emoji":"🎬","note":"Show summaries must be factual"},
+{"scene":"cards","text":"Some summaries are wrong in sneaky ways. Every sentence can be true, yet the picture it paints is misleading.","title":"Sneaky errors","items":[{"icon":"✅","label":"Literally true","sub":"Every fact checks out"},{"icon":"🎭","label":"Misleading","sub":"Wrong impression","stamp":"MISLEADING","tone":"red"}]},
+{"scene":"stats","text":"The old way asked a big AI model the same question five times, on very long inputs. That was costly.","title":"The old way","items":[{"value":5,"label":"calls per summary","tone":"red"}]},
+{"scene":"flow","text":"The new way uses two specialised judges. One checks literal truth. One checks if a new viewer would be misled.","title":"Two judges","steps":[{"icon":"📝","label":"Summary"},{"icon":"🔎","label":"Literal judge"},{"icon":"🧠","label":"Misleading judge"}]},
+{"scene":"flow","text":"Easy cases pass quickly, like bags at airport security. Only unsure cases get extra checks.","title":"Confidence gate","steps":[{"icon":"🙂","label":"Confident"},{"icon":"✅","label":"Done"},{"icon":"🤔","label":"Unsure"},{"icon":"🔁","label":"Extra checks"}]},
+{"scene":"stats","text":"Cost fell by about half, and the system caught more bad summaries.","title":"Results","items":[{"value":52.4,"suffix":"%","label":"cheaper","tone":"green"},{"value":86,"suffix":"%","label":"bad ones caught, up from 77%","tone":"green"}]},
+{"scene":"bullets","text":"The lesson: use specialised checkers, and only spend extra effort where the AI is unsure.","title":"Takeaways","points":[{"icon":"🧑‍⚖️","text":"Use specialised judges"},{"icon":"🛂","text":"Spend effort where unsure"},{"icon":"💰","text":"Cheaper and better"}]}
+]}

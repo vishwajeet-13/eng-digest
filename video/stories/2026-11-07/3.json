@@ -1,0 +1,8 @@
+{"lines":[
+{"scene":"title","text":"Your build pipeline can now run exactly the code you approved.","kicker":"GitHub Actions","big":"Lockfile","emoji":"🔒","note":"now generally available","tone":"accent"},
+{"scene":"compare","text":"A tag like v4 can be moved later, so a hacked action could slip bad code into your pipeline.","title":"The old risk","left":{"icon":"🏷️","label":"Tag reference","points":["Can move","Hidden changes"]},"right":{"icon":"📌","label":"Locked commit","points":["Exact snapshot","Never moves"]}},
+{"scene":"flow","text":"The lockfile records exact commits, including dependencies inside other actions.","title":"How it works","steps":[{"icon":"📄","label":"Workflow"},{"icon":"🔒","label":"Lockfile"},{"icon":"▶️","label":"Exact commit runs"}]},
+{"scene":"cards","text":"Dependabot updates the lockfile in the same pull request, so the two stay in sync.","title":"Staying current","items":[{"icon":"🤖","label":"Dependabot","sub":"updates both files","stamp":"SYNCED","tone":"green"}]},
+{"scene":"cards","text":"Admins can require lockfiles for an enterprise, an organization, or a repository.","title":"Governance","items":[{"icon":"🛡️","label":"Require lockfile","sub":"policy for admins","stamp":"POLICY","tone":"accent"}]},
+{"scene":"bullets","text":"A lockfile guarantees which code runs, not that the code is safe. Review before locking.","title":"Takeaways","points":[{"icon":"📌","text":"Pin exact commits"},{"icon":"👀","text":"Still review updates"},{"icon":"🚫","text":"Don't blindly auto-merge"}]}
+]}

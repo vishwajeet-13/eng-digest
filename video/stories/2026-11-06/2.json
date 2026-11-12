@@ -1,0 +1,10 @@
+{"lines": [
+{"scene":"title","text":"A very long password could log attackers into some Alpine Linux servers.","kicker":"SSH bug","big":"257 bytes","emoji":"🔓","note":"was enough to get in","tone":"red"},
+{"scene":"cards","text":"Servers check a password by scrambling it into a hash and comparing it with the stored one.","title":"How passwords are checked","items":[{"icon":"🔑","label":"Your password","sub":"scrambled into a hash"},{"icon":"🗃️","label":"Stored hash","sub":"compared to it"}]},
+{"scene":"cards","text":"Accounts with no password store just a star symbol in that field.","title":"No-password accounts","items":[{"icon":"👤","label":"Key-only account","sub":"stored value: *","tone":"amber"}]},
+{"scene":"flow","text":"But for passwords over 256 bytes, the scrambling function fails and returns that same star as its error.","title":"The bug","steps":[{"icon":"📏","label":"Very long password"},{"icon":"⚠️","label":"crypt returns *"},{"icon":"🟰","label":"Matches stored *"}]},
+{"scene":"title","text":"Star equals star, so the server thinks the password is right and lets the attacker in.","kicker":"Result","big":"Login allowed","emoji":"🚪","note":"with no real password","tone":"red"},
+{"scene":"compare","text":"It needs a no-password account, and at least one other account with a normal password.","title":"Who is at risk","left":{"icon":"⚠️","label":"Affected","points":["No PAM, passwords on","Account with *"]},"right":{"icon":"✅","label":"Safe","points":["Passwords turned off","PAM enabled"]}},
+{"scene":"flow","text":"The fix: update openssh, then restart sshd. Updating alone does not replace the running server.","title":"How to fix it","steps":[{"icon":"⬆️","label":"Update openssh"},{"icon":"🔄","label":"Restart sshd"}]},
+{"scene":"bullets","text":"If you can't update yet, turn off password logins.","title":"Takeaways","points":[{"icon":"🔄","text":"Restart after updating"},{"icon":"🔒","text":"Prefer key-only logins"},{"icon":"🔍","text":"Check logs for odd logins"}]}
+]}

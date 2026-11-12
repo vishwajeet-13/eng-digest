@@ -1,0 +1,40 @@
+---
+---
+$base-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$base-font-size: 17px;
+$brand-color: #4f46e5;
+$content-width: 760px;
+
+@import "minima";
+
+$text: #1f2937;
+$muted: #6b7280;
+$line: #e5e7eb;
+$accent: #4f46e5;
+
+body { background: #fff; color: $text; }
+a, a:visited { color: $accent; }
+
+.site-header { border-top: 0; border-bottom: 1px solid $line; }
+.site-title, .site-title:visited { color: $text; font-weight: 800; letter-spacing: -0.02em; }
+.site-title::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: .4em;
+  vertical-align: -.12em;
+  background: url("favicon.svg") center / contain no-repeat;
+}
+.site-footer { border-top-color: $line; }
+.post-meta, .footer-col-wrapper { color: $muted; }
+
+.post-list-heading, .post-title { font-weight: 800; letter-spacing: -0.02em; }
+.post-list > li { border: 1px solid $line; border-radius: 12px; padding: 14px 18px; }
+.post-link { font-weight: 600; }
+
+.post-content > h2 { margin-top: 2rem; padding-left: 12px; border-left: 4px solid $accent; font-weight: 700; font-size: 1.35rem; }
+.post-content > h2 + p em { font-size: .85rem; color: $muted; }
+.post-content hr { border: 0; border-top: 1px solid $line; margin: 2rem 0; }
+.post-content pre.mermaid { background: #fff; border: 1px solid $line; border-radius: 12px; text-align: center; }
+.post-content video { width: 100%; aspect-ratio: 16 / 9; border: 1px solid $line; border-radius: 12px; background: #f9fafb; margin-bottom: 1rem; }

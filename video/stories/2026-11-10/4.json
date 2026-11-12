@@ -1,0 +1,8 @@
+{"lines":[
+{"scene":"title","text":"DeepL shows how to take one network link offline without slowing down everyone else.","kicker":"AWS · DeepL","big":"Drain","emoji":"🚰","tone":"accent"},
+{"scene":"flow","text":"Normally, each cloud region sends traffic out through its closest link to the data centers.","title":"Closest exit","steps":[{"icon":"🇮🇪","label":"Ireland"},{"icon":"🇩🇪","label":"Frankfurt"},{"icon":"🇸🇪","label":"Stockholm"}]},
+{"scene":"cards","text":"DeepL has three links, in Dublin, Copenhagen and Stockholm. Dublin needs maintenance.","title":"The problem","items":[{"icon":"🔧","label":"Dublin link","sub":"needs repair","tone":"amber"}]},
+{"scene":"flow","text":"DeepL makes the Dublin route look longer by adding extra steps, called an AS path prepend.","title":"The trick","steps":[{"icon":"📣","label":"Announce"},{"icon":"➕","label":"Prepend x5"},{"icon":"🔀","label":"Ireland reroutes"}]},
+{"scene":"compare","text":"Only the Ireland region moves to another link. The other regions keep their own closest exit.","title":"Who moves","left":{"icon":"🇮🇪","label":"Ireland","points":["Uses another link"]},"right":{"icon":"🇩🇪","label":"Others","points":["Keep closest exit"]}},
+{"scene":"bullets","text":"The links stay up the whole time. The cost is extra data transfer fees during the detour.","title":"Takeaways","points":[{"icon":"🧭","text":"Steer traffic first"},{"icon":"🔌","text":"Repair second"},{"icon":"💸","text":"Expect detour fees"}]}
+]}

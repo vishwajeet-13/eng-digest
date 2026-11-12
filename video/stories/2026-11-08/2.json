@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"Many web frameworks trust a header that proxies never clean.","kicker":"Forwarded header","big":"Fake IP","emoji":"🕵️","note":"sent by any visitor","tone":"red"},
+{"scene":"flow","text":"A proxy sits in front of your app and adds headers telling it who the real visitor is.","title":"Normal flow","steps":[{"icon":"👤","label":"Visitor"},{"icon":"🚪","label":"Proxy"},{"icon":"🖥️","label":"App"}]},
+{"scene":"compare","text":"Most proxies clean X-Forwarded headers but pass the newer Forwarded header through untouched.","title":"What proxies do","left":{"icon":"➡️","label":"Forwarded","points":["Passed through","Visitor can fake it"]},"right":{"icon":"🧼","label":"X-Forwarded-For","points":["Overwritten","Proxy is the source"]}},
+{"scene":"cards","text":"Rails, Spring and Jetty can read Forwarded by default, and may trust it over the proxy's own header.","title":"Frameworks affected","items":[{"icon":"💎","label":"Rails","tone":"red"},{"icon":"☕","label":"Spring and Jetty","tone":"red"}]},
+{"scene":"bullets","text":"Attackers can fake their IP, bypass limits, send password-reset links to the wrong site, or poison caches.","title":"What can go wrong","points":[{"icon":"🌐","text":"Fake IP address"},{"icon":"✉️","text":"Wrong reset links"},{"icon":"🗃️","text":"Cache poisoning"}]},
+{"scene":"stats","text":"Spring Boot four point two now reads only X-Forwarded headers by default.","title":"A fix lands","items":[{"value":4.2,"prefix":"v","label":"Spring Boot default","tone":"green"}]},
+{"scene":"bullets","text":"Make every layer agree on which headers to trust, and drop the rest at the first proxy.","title":"Takeaways","points":[{"icon":"🤝","text":"Agree on headers"},{"icon":"🧼","text":"Drop extras at the edge"},{"icon":"📋","text":"Allow-list host names"}]}
+]}

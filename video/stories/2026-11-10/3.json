@@ -1,0 +1,8 @@
+{"lines":[
+{"scene":"title","text":"Meta built a debugger that can follow a bug from normal code into a graphics chip.","kicker":"Meta · LLDB","big":"CPU + GPU","emoji":"🐞","tone":"accent"},
+{"scene":"compare","text":"A CPU and a GPU speak different instruction languages and even use different memory maps.","title":"Two different worlds","left":{"icon":"🧠","label":"CPU","points":["Few threads","Own memory map"]},"right":{"icon":"⚡","label":"GPU","points":["Thousands of lanes","Own memory map"]}},
+{"scene":"cards","text":"Old GPU debuggers were built separately by each chip maker, so shared features were rebuilt again and again.","title":"The old way","items":[{"icon":"🟥","label":"AMD tool","sub":"its own debugger"},{"icon":"🟩","label":"NVIDIA tool","sub":"its own debugger"}]},
+{"scene":"flow","text":"Meta added a plugin layer to lldb-server. The CPU and GPU become two separate targets.","title":"The new design","steps":[{"icon":"👩‍💻","label":"Developer"},{"icon":"🛠️","label":"LLDB"},{"icon":"🔌","label":"Plugin"},{"icon":"⚡","label":"GPU target"}]},
+{"scene":"cards","text":"The developer still sees one session, and can switch between the CPU and GPU targets.","title":"One session","items":[{"icon":"🧠","label":"Target 0","sub":"CPU"},{"icon":"⚡","label":"Target 1","sub":"GPU"}]},
+{"scene":"bullets","text":"Each chip maker only writes its own plugin. Most shared pieces are already in the open-source LLVM project.","title":"Takeaways","points":[{"icon":"🔌","text":"Vendors write only a plugin"},{"icon":"🌍","text":"Shared parts are open source"},{"icon":"🧪","text":"A mock plugin tests it"}]}
+]}

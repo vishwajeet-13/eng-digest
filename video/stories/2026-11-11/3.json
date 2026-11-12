@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"Airbnb open-sourced Skipper, which lets a program pick up where it left off after a crash.","kicker":"Airbnb · Skipper","big":"Resume","emoji":"💾","tone":"accent"},
+{"scene":"cards","text":"Some jobs have many steps, wait for people, or call other services. A restart halfway is a problem.","title":"The problem","items":[{"icon":"🪜","label":"Many steps","sub":"across services"},{"icon":"⏳","label":"Long waits","sub":"human review"},{"icon":"💥","label":"Restarts","sub":"lost progress","tone":"red"}]},
+{"scene":"compare","text":"Many tools use a separate central service. Airbnb wanted each service to own its workflows and database.","title":"Where it runs","left":{"icon":"🏢","label":"Central service","points":["Extra system to run"]},"right":{"icon":"🏠","label":"Inside your service","points":["Same deployment","Same database"]}},
+{"scene":"flow","text":"A workflow is just a Java or Kotlin class. Each action's result is saved as a checkpoint.","title":"How it works","steps":[{"icon":"▶️","label":"Run action"},{"icon":"💾","label":"Save checkpoint"},{"icon":"➡️","label":"Next step"}]},
+{"scene":"flow","text":"After a crash, the workflow runs again from the top. Finished actions just return their saved results.","title":"Recovery","steps":[{"icon":"💥","label":"Crash"},{"icon":"🔁","label":"Re-run"},{"icon":"⏭️","label":"Skip saved steps"}]},
+{"scene":"cards","text":"Actions must be safe to repeat, because a crash can happen before a checkpoint is saved.","title":"The catch","items":[{"icon":"🔂","label":"At least once","sub":"make actions idempotent","tone":"amber"}]},
+{"scene":"bullets","text":"Skipper is now open source under Apache 2.0. The team owns database load and recovery.","title":"Takeaways","points":[{"icon":"🔓","text":"Open source, Apache 2.0"},{"icon":"🗄️","text":"Uses your own database"},{"icon":"⚖️","text":"You own the recovery"}]}
+]}

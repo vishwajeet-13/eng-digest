@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"Cloudflare redesigned how its D1 database service manages millions of databases.","kicker":"Cloudflare D1","big":"Millions","emoji":"🗄️","tone":"accent"},
+{"scene":"stats","text":"Live databases grew 15 times in a year. Daily active ones grew 18 times.","title":"Growth in one year","items":[{"value":15,"suffix":"x","label":"live databases","tone":"accent"},{"value":18,"suffix":"x","label":"daily active","tone":"green"}]},
+{"scene":"cards","text":"Each database is its own SQLite copy, and a central Postgres database remembers which ones exist.","title":"Two jobs","items":[{"icon":"📦","label":"Each database","sub":"own SQLite copy"},{"icon":"📒","label":"Postgres","sub":"source of truth"}]},
+{"scene":"flow","text":"Queries skip the central database and go straight to the database's own copy.","title":"A query's path","steps":[{"icon":"📱","label":"App"},{"icon":"🚪","label":"Edge worker"},{"icon":"🧭","label":"Eyeball worker"},{"icon":"📦","label":"Database copy"}]},
+{"scene":"cards","text":"Routing facts live in Workers KV, a store copied around the world, so Postgres stays out of the busy path.","title":"Fast lookups","items":[{"icon":"🌍","label":"Workers KV","sub":"global routing"}]},
+{"scene":"flow","text":"Every thirty seconds, each database checks in with Postgres, so mistakes fix themselves.","title":"Self-repair","steps":[{"icon":"💓","label":"Heartbeat"},{"icon":"📒","label":"Compare"},{"icon":"🔧","label":"Fix"}]},
+{"scene":"bullets","text":"Keep busy paths off central spots, expect failures, and let the system repair itself.","title":"Takeaways","points":[{"icon":"🚫","text":"No central bottleneck"},{"icon":"🔁","text":"Safe to retry"},{"icon":"🩹","text":"Self-correcting"}]}
+]}

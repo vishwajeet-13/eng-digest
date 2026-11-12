@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"LinkedIn built AI reviewers that check each other, and they cover over 40,000 code changes a week.","kicker":"LinkedIn · AI review","big":"40,000","emoji":"🤖","note":"changes reviewed weekly","tone":"accent"},
+{"scene":"compare","text":"AI writes code fast now. So the slow step is humans reading and reviewing it.","title":"The new bottleneck","left":{"icon":"⌨️","label":"Writing","points":["Minutes, by AI"]},"right":{"icon":"👀","label":"Reviewing","points":["Hours, by humans"]}},
+{"scene":"cards","text":"A vendor's reviewer was noisy and generic. One model alone made things up and pointed at wrong lines.","title":"What failed","items":[{"icon":"📢","label":"Vendor tool","sub":"noisy, generic","tone":"red"},{"icon":"🌀","label":"Single model","sub":"hallucinations","tone":"red"}]},
+{"scene":"flow","text":"Several AI agents review the same change on their own, never seeing each other's findings.","title":"Step 1: review","steps":[{"icon":"📄","label":"Pull request"},{"icon":"🤖","label":"Agent A"},{"icon":"🤖","label":"Agent B"}]},
+{"scene":"flow","text":"An orchestrator merges duplicate findings. Overlap between agents means higher confidence.","title":"Step 2: merge","steps":[{"icon":"🧩","label":"Findings"},{"icon":"🔗","label":"Merge"},{"icon":"⭐","label":"Rank"}]},
+{"scene":"flow","text":"A different model verifies findings only one agent raised. Weak or cosmetic ones are dropped.","title":"Step 3: verify","steps":[{"icon":"🔍","label":"Check"},{"icon":"🗑️","label":"Filter"},{"icon":"💬","label":"Post"}]},
+{"scene":"bullets","text":"Most reviews are posted before a human even opens the change, so people read fewer, better comments.","title":"Takeaways","points":[{"icon":"🤝","text":"AIs cross-check each other"},{"icon":"🎯","text":"Fewer, trusted comments"},{"icon":"🧑‍💻","text":"Humans still approve"}]}
+]}

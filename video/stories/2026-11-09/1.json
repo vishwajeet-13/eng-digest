@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"Outlook.com has started bouncing some email, and Microsoft did not announce it.","kicker":"Since 5 November","big":"Bounced!","emoji":"📭","tone":"red"},
+{"scene":"cards","text":"Email has three checks. SPF lists allowed senders. DKIM signs the message. DMARC ties them to the From address.","title":"Three email checks","items":[{"icon":"📋","label":"SPF","sub":"allowed senders"},{"icon":"✍️","label":"DKIM","sub":"signature"},{"icon":"🛡️","label":"DMARC","sub":"the rulebook"}]},
+{"scene":"compare","text":"Domains with no DMARC record may now see some messages rejected, even from small senders.","title":"Outlook.com now","left":{"icon":"❌","label":"No DMARC","points":["Some mail bounces"]},"right":{"icon":"✅","label":"Has DMARC","points":["Mail goes through"]}},
+{"scene":"flow","text":"The bounce says the message lacks authentication records, even when SPF already works.","title":"What happens","steps":[{"icon":"✉️","label":"You send"},{"icon":"🔍","label":"Outlook checks"},{"icon":"🚫","label":"550 bounce"}]},
+{"scene":"title","text":"Only some messages bounce, so a sender can easily think everything is fine.","kicker":"The tricky part","big":"Some","emoji":"🎲","tone":"amber"},
+{"scene":"flow","text":"The fix is one DNS record, named underscore dmarc, with the value v equals DMARC1, p equals none.","title":"The fix","steps":[{"icon":"🌐","label":"Open DNS"},{"icon":"➕","label":"Add TXT record"},{"icon":"✅","label":"Done"}]},
+{"scene":"bullets","text":"Check your domain with dig, and add the record. It blocks nothing else.","title":"Takeaways","points":[{"icon":"🔎","text":"Check for a DMARC record"},{"icon":"➕","text":"Add p=none today"},{"icon":"📬","text":"Keep your mail flowing"}]}
+]}

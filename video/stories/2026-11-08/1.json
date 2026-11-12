@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"An Android app with no code can trap a phone in a crash loop.","kicker":"GhostMap","big":"0 code","emoji":"📱","note":"and it never has to open","tone":"red"},
+{"scene":"cards","text":"An Android app is really a ZIP file. Each file inside says how it is stored and how big it is.","title":"What an APK is","items":[{"icon":"📦","label":"APK","sub":"a ZIP file","tone":"accent"},{"icon":"🏷️","label":"Size label","sub":"declared by each entry","tone":"amber"}]},
+{"scene":"compare","text":"One part of Android skips the size check for odd storage types. Another part trusts that size.","title":"Two readers disagree","left":{"icon":"🔍","label":"Checker","points":["Checks only stored","Skips odd types"]},"right":{"icon":"🗺️","label":"Loader","points":["Trusts the size","Maps too much"]}},
+{"scene":"flow","text":"Reading the empty space kills the process. If it is a core service, the phone restarts and fails again.","title":"The crash loop","steps":[{"icon":"📥","label":"Install"},{"icon":"📖","label":"Read file"},{"icon":"💥","label":"Crash"},{"icon":"🔁","label":"Restart"}]},
+{"scene":"stats","text":"Researchers reproduced it on Android seventeen. It affects Android ten and above.","title":"How far it reaches","items":[{"value":10,"suffix":"+","label":"Android versions from","tone":"red"}]},
+{"scene":"cards","text":"Google said it is outside the scope of a security fix. Restarting and safe mode do not help.","title":"No quick fix","items":[{"icon":"🔄","label":"Reboot","sub":"does not help","stamp":"FAILS","tone":"red"},{"icon":"🧹","label":"Factory reset","sub":"erases data","tone":"amber"}]},
+{"scene":"bullets","text":"Two parts of a system must read the same file the same way. Mismatches become security bugs.","title":"Takeaways","points":[{"icon":"🤝","text":"Parsers must agree"},{"icon":"🚫","text":"Reject unknown types"},{"icon":"🛡️","text":"Scan before installing"}]}
+]}
