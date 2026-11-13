@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"How do computers around the world agree on one answer, even when the network is shaky?","kicker":"Cloudflare","big":"Consensus","emoji":"🌍","note":"Agreeing without a boss"},
+{"scene":"cards","text":"Consensus means many machines agree on one shared truth, even if some crash or disconnect.","title":"The goal","items":[{"icon":"🖥️","label":"Replicas","sub":"copies of the data"},{"icon":"🤝","label":"Agreement","sub":"no conflicting values"}]},
+{"scene":"compare","text":"Popular methods like Raft rely on one leader. If it is slow or cut off, everything stalls until a new leader is elected.","title":"Leader problem","left":{"icon":"👑","label":"One leader","points":["Slow leader stalls all","Elections can clash"]},"right":{"icon":"🤝","label":"QuePaxa","points":["Leader is optional","Anyone can propose"]}},
+{"scene":"stats","text":"In 2020, a faulty network switch made a Cloudflare dashboard run eighty times slower for six hours.","title":"What went wrong in 2020","items":[{"value":80,"suffix":"x","label":"slower dashboard","tone":"red"},{"value":6,"suffix":" hrs","label":"of slowness","tone":"amber"}]},
+{"scene":"flow","text":"In QuePaxa, proposers send ideas to recorders, then adopt the best-ranked idea they see, instead of fighting.","title":"How QuePaxa works","steps":[{"icon":"💡","label":"Propose"},{"icon":"📝","label":"Recorders share"},{"icon":"🤝","label":"Adopt best"},{"icon":"✅","label":"Decide"}]},
+{"scene":"stats","text":"Cloudflare says over ninety-five percent of decisions are made fast by the leader.","title":"Cloudflare's Meerkat","items":[{"value":95,"prefix":">","suffix":"%","label":"decided by leader","tone":"green"}]},
+{"scene":"bullets","text":"When the leader fails, the system slows down, but it never stops.","title":"Takeaways","points":[{"icon":"👑","text":"Leader is only a shortcut"},{"icon":"🐢","text":"Slows, never stops"},{"icon":"🌐","text":"Built for the internet"}]}
+]}
