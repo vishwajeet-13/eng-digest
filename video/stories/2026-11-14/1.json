@@ -1,0 +1,8 @@
+{"lines":[
+{"scene":"title","text":"Meta's ad servers are never big enough, so it decides where every bit of computer power goes.","kicker":"Meta","big":"+10%","emoji":"📢","note":"Better ad ranking since 2017"},
+{"scene":"cards","text":"Some ad requests gain a lot from extra computer power. Others gain almost nothing.","title":"The problem","items":[{"icon":"⚡","label":"High gain","sub":"worth extra power"},{"icon":"😴","label":"Low gain","sub":"barely changes"}]},
+{"scene":"compare","text":"Old rules put requests in big groups. A trained AI model now guesses the gain for each single request.","title":"Rules vs AI","left":{"icon":"📏","label":"Fixed rules","points":["Big groups","Hard to scale"]},"right":{"icon":"🧠","label":"AI model","points":["Per request","Learns patterns"]}},
+{"scene":"flow","text":"Each request then passes three choices: which region, which hardware, and how much of one machine.","title":"Three decisions","steps":[{"icon":"🌍","label":"Region"},{"icon":"🖥️","label":"Hardware"},{"icon":"📊","label":"Machine share"}]},
+{"scene":"stats","text":"AI agents now help tune the system. They did about twenty percent of the work, and eighty percent on the most automated part.","title":"AI agents at work","items":[{"value":20,"suffix":"%","label":"of optimizations","tone":"accent"},{"value":80,"suffix":"%","label":"on top mechanism","tone":"green"}]},
+{"scene":"bullets","text":"Engineers still approve every change before it ships.","title":"Takeaways","points":[{"icon":"🎯","text":"Spend compute where it pays"},{"icon":"🤖","text":"Agents propose and test"},{"icon":"👩‍💻","text":"Humans approve"}]}
+]}
