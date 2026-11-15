@@ -1,0 +1,9 @@
+{"lines": [
+{"scene":"title","text":"Cloudflare says AI hacking tools are spreading fast, and requests from them are up thirty times.","kicker":"Cloudflare","big":"30x","emoji":"🤖","note":"since October 1","tone":"red"},
+{"scene":"cards","text":"ARTEX let many AI agents test a target at once. Its creator took it down, but copies spread.","title":"The tool","items":[{"icon":"🧰","label":"ARTEX","sub":"open-source"},{"icon":"🍴","label":"12,000+ repos","sub":"related copies","stamp":"SPREAD","tone":"amber"}]},
+{"scene":"stats","text":"Cloudflare tracks more than fifty tool families, with thousands of addresses running them.","title":"What Cloudflare sees","items":[{"value":50,"suffix":"+","label":"tool families","tone":"red"},{"value":30,"suffix":"x","label":"more requests","tone":"amber"}]},
+{"scene":"flow","text":"In one case, attackers used a stolen key that never expired, then hopped between systems and tried to copy databases.","title":"One incident","steps":[{"icon":"🔑","label":"Stolen key"},{"icon":"🗺️","label":"Map target"},{"icon":"🦘","label":"Hop around"},{"icon":"🗄️","label":"Copy data"}]},
+{"scene":"compare","text":"Machines work at machine speed, so old keys and forgotten doors get found quickly.","title":"Old vs new","left":{"icon":"🕵️","label":"One hacker","points":["Slow","One target"]},"right":{"icon":"🤖","label":"Agent swarm","points":["Parallel","Many targets"]}},
+{"scene":"cards","text":"Cloudflare's advice uses a house metaphor: strong gates, a guard, bot checks, no back doors, and a neighborhood watch.","title":"Modern Security Model","items":[{"icon":"🚪","label":"Gates and guard"},{"icon":"🤖","label":"Bot defense"},{"icon":"🧱","label":"No back doors"}]},
+{"scene":"bullets","text":"Use short-lived keys, check who gets in, and keep systems separate.","title":"Takeaways","points":[{"icon":"⏳","text":"Short-lived keys"},{"icon":"🪪","text":"Verify identity"},{"icon":"🧱","text":"Separate systems"}]}
+]}
