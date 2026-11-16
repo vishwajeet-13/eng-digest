@@ -1,0 +1,9 @@
+{"lines": [
+{"scene":"title","text":"AI reads every word at once, so how does it know the word order?","kicker":"Word order in LLMs","big":"Who jumped?","emoji":"🦊","note":"Same words, different meaning","tone":"accent"},
+{"scene":"compare","text":"The red fox jumps over the gray fox means something different from the gray fox jumping over the red one.","title":"Order changes meaning","left":{"icon":"🔴","label":"Red fox jumps","points":["Over the gray fox"]},"right":{"icon":"⚪","label":"Gray fox jumps","points":["Over the red fox"]}},
+{"scene":"cards","text":"Early models added a position vector to each word. The original transformer used fixed sine and cosine waves.","title":"Older methods","items":[{"icon":"📍","label":"GPT-2","sub":"learned vectors"},{"icon":"🌊","label":"Transformer 2017","sub":"sine and cosine"}]},
+{"scene":"flow","text":"RoPE rotates each word's query and key numbers by an angle that depends on its position.","title":"How RoPE works","steps":[{"icon":"🔢","label":"Query and key"},{"icon":"🔄","label":"Rotate by position"},{"icon":"📏","label":"Compare gap"}]},
+{"scene":"stats","text":"Words two positions apart score the same whether they sit at the start of a text or after a hundred more words.","title":"Gap is what counts","items":[{"value":3,"label":"positions apart","tone":"green"}]},
+{"scene":"cards","text":"Newer designs rotate only some numbers, skip RoPE in some layers, or add a learned bias.","title":"Newer twists","items":[{"icon":"✂️","label":"Partial RoPE"},{"icon":"🚫","label":"NoPE layers"},{"icon":"➕","label":"Learned bias"}]},
+{"scene":"bullets","text":"RoPE is still the most common choice, and the author expects it to stay that way into 2027.","title":"Takeaways","points":[{"icon":"🔄","text":"RoPE rotates by position"},{"icon":"📏","text":"Only the gap matters"},{"icon":"👑","text":"Still the most common"}]}
+]}
