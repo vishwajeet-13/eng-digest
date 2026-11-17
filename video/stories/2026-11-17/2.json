@@ -1,0 +1,8 @@
+{"lines":[
+{"scene":"title","text":"A very long password can log you in to some Linux servers, with no real password.","kicker":"Security","big":"sshole","emoji":"🔓","note":"actively exploited","tone":"red"},
+{"scene":"cards","text":"Linux marks accounts that have no password with a single asterisk.","title":"The no-password mark","items":[{"icon":"✳️","label":"Asterisk","sub":"means no password","tone":"amber"}]},
+{"scene":"flow","text":"On musl, a password over 256 bytes makes the check fail with an error. The error is also an asterisk.","title":"The mix-up","steps":[{"icon":"⌨️","label":"Long password"},{"icon":"⚠️","label":"musl error: *"},{"icon":"✳️","label":"Looks like a match"}]},
+{"scene":"flow","text":"OpenSSH sees two asterisks match and lets the attacker in.","title":"Login accepted","steps":[{"icon":"🔑","label":"OpenSSH checks"},{"icon":"✅","label":"Match!"},{"icon":"🚪","label":"Attacker in"}]},
+{"scene":"compare","text":"Only some setups are affected. Servers using glibc or PAM are not.","title":"Who is at risk","left":{"icon":"🏔️","label":"Affected","points":["musl, no PAM","Alpine Linux"]},"right":{"icon":"🛡️","label":"Not affected","points":["glibc or PAM","Red Hat"]}},
+{"scene":"bullets","text":"Update OpenSSH to ten point six p two, or turn off password logins.","title":"What to do","points":[{"icon":"⬆️","text":"Upgrade OpenSSH 10.6p2"},{"icon":"🚫","text":"PasswordAuthentication no"},{"icon":"🔍","text":"Check auth logs"}]}
+]}

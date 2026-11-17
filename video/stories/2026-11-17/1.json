@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"A tiny software change in July took down Microsoft email in November.","kicker":"Outage","big":"4 months","emoji":"📧","note":"hidden bug","tone":"red"},
+{"scene":"compare","text":"Load tests used weaker machines. The bug only showed up on bigger, newer ones.","title":"Why tests missed it","left":{"icon":"🧪","label":"Tested on","points":["Fewer cores"]},"right":{"icon":"🖥️","label":"Real world","points":["More cores","Bug appears"]}},
+{"scene":"flow","text":"Teams traffic surged while some capacity was offline. Together, they woke the bug.","title":"The trigger","steps":[{"icon":"💬","label":"Teams surge"},{"icon":"📉","label":"Less capacity"},{"icon":"🐛","label":"Bug wakes"}]},
+{"scene":"flow","text":"Each failing server sent its traffic to the next one, which failed too.","title":"Cascading failure","steps":[{"icon":"🖥️","label":"Server fails"},{"icon":"➡️","label":"Load moves"},{"icon":"💥","label":"Next fails"}]},
+{"scene":"stats","text":"Within two hours, more than eighty percent of gateway servers stopped responding.","title":"At the worst point","items":[{"value":80,"prefix":">","suffix":"%","label":"servers unresponsive","tone":"red"}]},
+{"scene":"cards","text":"Rolling back was not possible because the change was months old. Engineers patched the patch instead.","title":"The fix","items":[{"icon":"🩹","label":"Patch the patch","sub":"restore good code","stamp":"FIXED","tone":"green"}]},
+{"scene":"bullets","text":"Test on real hardware, and plan for recovery when everything is down.","title":"Takeaways","points":[{"icon":"🧪","text":"Test like real life"},{"icon":"🔁","text":"Plan for hard recovery"},{"icon":"⚠️","text":"Spare capacity matters"}]}
+]}
