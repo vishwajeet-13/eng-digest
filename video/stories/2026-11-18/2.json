@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"A tiny Java bug can let a stranger take over a server.","kicker":"Java4Shell","big":"9.2 / 10","emoji":"☕","note":"Severity score","tone":"red"},
+{"scene":"cards","text":"Base64 is a way to write data as plain text. Java decodes it all the time.","title":"What is Base64?","items":[{"icon":"🔤","label":"Base64","sub":"Data written as text"}]},
+{"scene":"flow","text":"To go faster, Java uses special CPU instructions in hand-written low-level code.","title":"The fast path","steps":[{"icon":"📥","label":"Text in"},{"icon":"⚡","label":"Fast decoder"},{"icon":"📤","label":"Data out"}]},
+{"scene":"cards","text":"A stray equals sign at the end makes that code get the length wrong.","title":"The mistake","items":[{"icon":"=","label":"Stray padding","sub":"Length goes negative","stamp":"BUG","tone":"red"}]},
+{"scene":"stats","text":"It writes 64 bytes where far fewer were expected, spilling into neighbouring memory.","title":"The spill","items":[{"value":64,"suffix":" bytes","label":"written out of bounds","tone":"red"}]},
+{"scene":"cards","text":"Calif showed takeover of apps like Keycloak, Jira, Confluence and Jenkins, with no login needed.","title":"Who could be hit","items":[{"icon":"🔓","label":"Keycloak","sub":"No login"},{"icon":"🎫","label":"Jira","sub":"No login"},{"icon":"🏗️","label":"Jenkins","sub":"No login"}]},
+{"scene":"bullets","text":"The lesson: update Java, and remove code you do not need.","title":"Takeaways","points":[{"icon":"⬆️","text":"Update OpenJDK"},{"icon":"🗑️","text":"Delete unused code"}]}
+]}

@@ -1,0 +1,8 @@
+{"lines":[
+{"scene":"title","text":"Some bugs vanish when you try to run the test again.","kicker":"Testing","big":"Replay any bug","emoji":"🔁","note":"Deterministic simulation testing"},
+{"scene":"compare","text":"On a live system, timing changes every run, so the same fault gives different results.","title":"Live vs simulated","left":{"icon":"🎲","label":"Live system","points":["Real clock","Real network","Hard to replay"]},"right":{"icon":"🧪","label":"Simulation","points":["Fake clock","Fake network","Same every time"]}},
+{"scene":"flow","text":"The code runs in one thread. Time moves forward in small steps called ticks.","title":"How it runs","steps":[{"icon":"🌱","label":"Pick seed"},{"icon":"⏱️","label":"Tick"},{"icon":"💥","label":"Inject fault"},{"icon":"✅","label":"Check"}]},
+{"scene":"cards","text":"A seed is a starting number. The same seed always gives the same random choices.","title":"The seed","items":[{"icon":"🌱","label":"Seed 123","sub":"Same faults, same order","stamp":"REPLAY"}]},
+{"scene":"stats","text":"No real waiting happens, so hours of testing take only seconds.","title":"Fast-forward","items":[{"value":1,"suffix":" sec","label":"of real time","tone":"green"}]},
+{"scene":"bullets","text":"The catch: you must design the system this way from the start.","title":"Takeaways","points":[{"icon":"🔁","text":"Every bug can be replayed"},{"icon":"🏗️","text":"Design for it early"}]}
+]}
