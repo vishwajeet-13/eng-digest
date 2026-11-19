@@ -1,0 +1,8 @@
+{"lines":[
+{"scene":"title","text":"Two serious bugs were found in NGINX, the web server behind over 225 million websites.","kicker":"Security","big":"NGINX","emoji":"🚪","note":"two critical bugs","tone":"red"},
+{"scene":"flow","text":"NGINX is a doorman. It takes each request and sends it to the right app.","title":"What NGINX does","steps":[{"icon":"🌐","label":"Visitor"},{"icon":"🚪","label":"NGINX"},{"icon":"🖥️","label":"App"}]},
+{"scene":"stats","text":"Both flaws are rated 9.2 out of 10. One had hidden in the code since 2015.","title":"How serious","items":[{"value":9.2,"label":"severity score","tone":"red"},{"value":2015,"label":"bug first appeared","tone":"amber"}]},
+{"scene":"cards","text":"Both bugs are in how NGINX handles HTTP/2, a modern way for browsers to talk to servers.","title":"The weak spot","items":[{"icon":"⚡","label":"HTTP/2","sub":"must be turned on","tone":"amber"},{"icon":"🧠","label":"Memory bug","sub":"no password needed","stamp":"CRITICAL","tone":"red"}]},
+{"scene":"compare","text":"The flaw is in NGINX itself, so even safe website code can be exposed.","title":"Who is at risk","left":{"icon":"🔓","label":"Unpatched","points":["Attacker runs code","Data can be stolen"]},"right":{"icon":"🔒","label":"Patched","points":["Fix released Nov 18","Or turn HTTP/2 off"]}},
+{"scene":"bullets","text":"Update NGINX, or switch HTTP/2 off until you can. AI helped find these old bugs.","title":"What to do","points":[{"icon":"⬆️","text":"Update to 1.30.7 or 1.31.9"},{"icon":"⏸️","text":"No time? Turn HTTP/2 off"},{"icon":"🤖","text":"AI now finds old bugs fast"}]}
+]}

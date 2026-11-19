@@ -1,0 +1,8 @@
+{"lines":[
+{"scene":"title","text":"Meta says AI agents now do over sixty percent of a big engineering chore.","kicker":"AI at Meta","big":"60%+","emoji":"🤖","note":"done by agents","tone":"accent"},
+{"scene":"cards","text":"Meta runs many models that decide which ads to show. Each one is built a little differently.","title":"The problem","items":[{"icon":"📊","label":"Many ranking models","sub":"each one different","tone":"accent"},{"icon":"💡","label":"A new technique","sub":"won't copy and paste","tone":"amber"}]},
+{"scene":"compare","text":"Before, expert engineers tuned each model by hand. That took time and lots of computing.","title":"Adapting a technique","left":{"icon":"🧑‍🔧","label":"By hand","points":["Slow","Costly training runs"]},"right":{"icon":"🤖","label":"With agents","points":["Pick what to try","Run and watch jobs"]}},
+{"scene":"flow","text":"Agents find good techniques, adapt them, run the training, and fix failures.","title":"What agents do","steps":[{"icon":"🔎","label":"Discover"},{"icon":"🛠️","label":"Adapt"},{"icon":"🏋️","label":"Train"},{"icon":"🚀","label":"Ship"}]},
+{"scene":"stats","text":"Meta estimates three times the output and a median four times less training compute.","title":"Early results","items":[{"value":3,"suffix":"x","label":"engineer output","tone":"green"},{"value":4,"suffix":"x","label":"less compute","tone":"green"},{"value":45,"prefix":"$","suffix":"M+","label":"saved this year","tone":"green"}]},
+{"scene":"bullets","text":"Engineers now approve plans and set priorities, while agents do the legwork.","title":"Takeaway","points":[{"icon":"🤖","text":"Agents do the legwork"},{"icon":"✅","text":"Engineers approve and steer"},{"icon":"💰","text":"Big compute savings"}]}
+]}
