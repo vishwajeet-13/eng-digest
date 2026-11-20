@@ -1,0 +1,8 @@
+{"lines":[
+{"scene":"title","text":"One tiny byte of overflow in Ruby could let attackers take over websites.","kicker":"Security","big":"1 byte","emoji":"🐛","note":"in Ruby since 2.4","tone":"red"},
+{"scene":"cards","text":"The letter ß has no capital in many old encodings. Ruby writes two letters, SS, instead.","title":"The odd letter","items":[{"icon":"ß","label":"ß","sub":"one byte in","tone":"accent"},{"icon":"🔠","label":"SS","sub":"two bytes out","tone":"amber"}]},
+{"scene":"flow","text":"Ruby checks room for only one byte. Enough of these letters spill past the end of the memory.","title":"How it goes wrong","steps":[{"icon":"📝","label":"Text with ß"},{"icon":"🔠","label":"Make capitals"},{"icon":"📏","label":"Check one byte"},{"icon":"💥","label":"Spills over"}]},
+{"scene":"stats","text":"An input with 21 of these letters is enough to overflow by one byte.","title":"The trigger","items":[{"value":21,"label":"ß letters","tone":"red"}]},
+{"scene":"compare","text":"Rails and classic Sinatra apps are affected by default. GitLab and GitHub Enterprise had no fix yet.","title":"Who is exposed","left":{"icon":"🔓","label":"Old Ruby","points":["Rails affected","Sinatra classic affected"]},"right":{"icon":"🔒","label":"Fixed Ruby","points":["3.3.14","3.4.13 or 4.0.10"]}},
+{"scene":"bullets","text":"Upgrade Ruby soon. A public attack demo is planned for November 25.","title":"What to do","points":[{"icon":"⬆️","text":"Upgrade Ruby"},{"icon":"📅","text":"Demo due Nov 25"},{"icon":"🏢","text":"Check vendor software"}]}
+]}

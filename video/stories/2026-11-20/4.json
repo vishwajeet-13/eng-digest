@@ -1,0 +1,8 @@
+{"lines":[
+{"scene":"title","text":"Yelp moved its databases to a new cluster by moving the disks, not the data.","kicker":"Cloud","big":"90","emoji":"💾","note":"clusters, zero downtime","tone":"accent"},
+{"scene":"compare","text":"Copying data to new machines would double the computers and take weeks for the biggest clusters.","title":"The usual way","left":{"icon":"📦","label":"Copy data","points":["Weeks for big ones","Double the computers"]},"right":{"icon":"💾","label":"Move the disk","points":["No copying","Same data"]}},
+{"scene":"cards","text":"An EBS disk belongs to a zone, not to a cluster. So a new pod can pick up the same disk.","title":"The key idea","items":[{"icon":"💾","label":"EBS disk","sub":"tied to a zone","tone":"accent"},{"icon":"📍","label":"Pointer","sub":"to the disk ID","tone":"green"}]},
+{"scene":"flow","text":"One pod at a time, Yelp deleted the old pod, let the disk detach, and the new pod took over.","title":"One pod at a time","steps":[{"icon":"🗑️","label":"Delete old pod"},{"icon":"⏏️","label":"Disk detaches"},{"icon":"🔌","label":"New pod attaches"},{"icon":"🔁","label":"Next pod"}]},
+{"scene":"stats","text":"About ninety clusters moved with no downtime and no data loss. The biggest took twelve hours.","title":"Results","items":[{"value":90,"label":"clusters","tone":"green"},{"value":12,"suffix":"h","label":"biggest cluster","tone":"green"}]},
+{"scene":"bullets","text":"Rolling back is the same steps in reverse. Check backups and alerts before you start.","title":"Takeaway","points":[{"icon":"↩️","text":"Rollback is easy"},{"icon":"💾","text":"Check backups first"},{"icon":"🔔","text":"Check alert levels"}]}
+]}
