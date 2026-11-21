@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"Amazon released a free copy of AWS that runs on your laptop, and AI agents wrote all of it.","kicker":"Cloud","big":"200+","emoji":"☁️","note":"AWS services, emulated","tone":"accent"},
+{"scene":"flow","text":"It began as a three-line prompt: write tests, pass them on real AWS, then build a copy that passes the same tests.","title":"How it started","steps":[{"icon":"📝","label":"Write tests"},{"icon":"☁️","label":"Pass on AWS"},{"icon":"🤖","label":"Build the copy"}]},
+{"scene":"cards","text":"Three teams of agents work together. One keeps the tests, one finds problems, and one fixes them.","title":"Three agent teams","items":[{"icon":"🧪","label":"Tests","sub":"keep the suite"},{"icon":"🔍","label":"Finders","sub":"spot issues"},{"icon":"🔧","label":"Fixers","sub":"patch them"}]},
+{"scene":"flow","text":"Every fix must pass a merge gate of checks before it joins the code.","title":"The merge gate","steps":[{"icon":"🔧","label":"Fix"},{"icon":"🚧","label":"Gate checks"},{"icon":"✅","label":"Merged"}]},
+{"scene":"stats","text":"Early outside tests saw about 60 to 70 percent of checks pass for DynamoDB, S3 and SQS, but only about 20 percent for CloudFormation.","title":"How close is it?","items":[{"value":65,"prefix":"~","suffix":"%","label":"DynamoDB, S3, SQS","tone":"green"},{"value":20,"prefix":"~","suffix":"%","label":"CloudFormation","tone":"red"}]},
+{"scene":"compare","text":"It does not check security permissions the way real AWS does.","title":"Know the limit","left":{"icon":"⚠️","label":"Emulator","points":["No real IAM checks","Requests may succeed"]},"right":{"icon":"☁️","label":"Real AWS","points":["Denies bad requests"]}},
+{"scene":"bullets","text":"Use it for fast, free testing. Test security on real AWS before you launch.","title":"Takeaways","points":[{"icon":"💸","text":"Free local testing"},{"icon":"🔐","text":"Not for security tests"},{"icon":"☁️","text":"Verify on real AWS"}]}
+]}

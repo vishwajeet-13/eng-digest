@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"AI agents spend most of their time just waiting, and Google built tools for that.","kicker":"Cloud","big":"90–95%","emoji":"⏳","note":"of time idle, says Google","tone":"amber"},
+{"scene":"compare","text":"A normal app starts and keeps running. An agent runs for seconds, then waits for a model, an API or a person.","title":"App vs agent","left":{"icon":"🖥️","label":"Normal app","points":["Starts once","Keeps running"]},"right":{"icon":"🤖","label":"AI agent","points":["Short bursts","Long waits"]}},
+{"scene":"cards","text":"Agent Substrate splits an agent's saved state, called an actor, from the machine that runs it, called a worker.","title":"Two parts","items":[{"icon":"💾","label":"Actor","sub":"files and memory"},{"icon":"⚙️","label":"Worker","sub":"ready machine"}]},
+{"scene":"flow","text":"When an agent wakes up, it gets a ready worker and its state is restored. When idle, the state is saved and the worker is freed.","title":"Wake and sleep","steps":[{"icon":"😴","label":"Idle"},{"icon":"💾","label":"Save state"},{"icon":"⏰","label":"Wake up"},{"icon":"⚙️","label":"Restore"}]},
+{"scene":"stats","text":"Google says agents resume in under 500 milliseconds.","title":"Resume time","items":[{"value":500,"prefix":"<","suffix":" ms","label":"to resume","tone":"green"}]},
+{"scene":"cards","text":"gVisor adds a safety wall. It catches the agent's requests to the main system and handles them itself.","title":"gVisor","items":[{"icon":"🧱","label":"Safety wall","sub":"catches system calls"}]},
+{"scene":"bullets","text":"Both are now donated to the CNCF, so anyone can use and improve them.","title":"Takeaways","points":[{"icon":"⚡","text":"Fast agent resume"},{"icon":"🧱","label":"","text":"Safer untrusted code"},{"icon":"🌐","text":"Open source at CNCF"}]}
+]}
