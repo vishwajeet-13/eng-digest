@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"Google's Kubernetes servers kept timing out, and the cause was hiding in three places.","kicker":"Cloud","big":"3 bugs","emoji":"🕵️","note":"one mystery","tone":"red"},
+{"scene":"stats","text":"About 800 developers were blocked from deploying to production.","title":"The impact","items":[{"value":800,"prefix":"~","label":"developers blocked","tone":"red"}]},
+{"scene":"flow","text":"Packet captures showed the server replying to new connections with stale replies from old, closed ones.","title":"What the captures showed","steps":[{"icon":"📦","label":"New request"},{"icon":"👻","label":"Stale reply"},{"icon":"⏳","label":"Timeout"}]},
+{"scene":"cards","text":"Three causes worked together: packet reordering, Envoy's half-close behavior, and a Linux kernel bug.","title":"Three causes","items":[{"icon":"🔀","label":"Reordering","sub":"Private Service Connect"},{"icon":"🔌","label":"Half-close","sub":"Envoy proxy"},{"icon":"🐧","label":"Kernel bug","sub":"drops FIN packets"}]},
+{"scene":"flow","text":"The kernel threw away some out-of-order FIN packets, leaving sockets stuck in FIN_WAIT_2.","title":"Stuck forever","steps":[{"icon":"👋","label":"FIN sent"},{"icon":"🗑️","label":"FIN dropped"},{"icon":"🧊","label":"FIN_WAIT_2"}]},
+{"scene":"bullets","text":"Google rolled back a change, fixed the proxy, and patched the kernel. Fixes reached GKE 1.33.5 and later.","title":"The fixes","points":[{"icon":"↩️","text":"Rollback"},{"icon":"🛠️","text":"Proxy fix"},{"icon":"🐧","text":"Kernel patch"}]},
+{"scene":"bullets","text":"Takeaway: small, reasonable behaviors in different layers can combine into one big failure. Packet captures reveal it.","title":"Takeaway","points":[{"icon":"🔍","text":"Capture packets"},{"icon":"🧩","text":"Bugs can stack"}]}
+]}

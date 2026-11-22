@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"Valkey replaced a classic data structure and saved up to 43% of memory per item.","kicker":"Backend","big":"-43%","emoji":"🧠","note":"memory per member","tone":"green"},
+{"scene":"compare","text":"A skiplist puts each item in its own memory spot, linked by pointers. The new fbtree packs 61 items into one block.","title":"Skiplist vs fbtree","left":{"icon":"🔗","label":"Skiplist","points":["1 item per node","Many pointers"]},"right":{"icon":"📚","label":"fbtree","points":["61 items per node","Few pointers"]}},
+{"scene":"stats","text":"Skiplist pointers cost about 37 bytes per item before storing the member name.","title":"The old cost","items":[{"value":37,"prefix":"~","suffix":" B","label":"overhead per node","tone":"red"}]},
+{"scene":"flow","text":"Each skiplist step decides the next one, so the processor keeps waiting on slow memory.","title":"Why it is slow","steps":[{"icon":"👉","label":"Follow pointer"},{"icon":"⏳","label":"Wait for memory"},{"icon":"👉","label":"Next pointer"}]},
+{"scene":"stats","text":"With 5 million members, overhead fell from 50.3 bytes to 28.5 with sequential inserts, and 32.0 with random ones.","title":"5 million members","items":[{"value":43,"suffix":"%","label":"less, sequential","tone":"green"},{"value":36,"suffix":"%","label":"less, random","tone":"green"}]},
+{"scene":"stats","text":"Updating a score also got up to 105 percent faster in the team's benchmark.","title":"Speed","items":[{"value":105,"prefix":"+","suffix":"%","label":"ZADD score updates","tone":"green"}]},
+{"scene":"bullets","text":"Takeaway: nothing changes for users, except OBJECT ENCODING now says btree. Memory layout matters.","title":"Takeaway","points":[{"icon":"📚","text":"Pack data together"},{"icon":"✅","text":"Same commands"}]}
+]}
