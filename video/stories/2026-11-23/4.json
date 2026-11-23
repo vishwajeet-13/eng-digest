@@ -1,0 +1,8 @@
+{"lines":[
+{"scene":"title","text":"Google announced a safe room for AI agents, where the agent never holds your passwords.","kicker":"Agent Compute Engine","big":"No keys","emoji":"🔒","note":"inside the sandbox","tone":"accent"},
+{"scene":"cards","text":"Each agent runs in a microVM, a tiny isolated virtual computer walled off from the others.","title":"The microVM","items":[{"icon":"📦","label":"MicroVM","sub":"Tiny, walled-off computer","stamp":"ISOLATED","tone":"green"}]},
+{"scene":"flow","text":"The agent's brain runs outside the box and only sends commands in. The sandbox sends results back.","title":"Brain and hands","steps":[{"icon":"🧠","label":"Harness"},{"icon":"➡️","label":"Commands"},{"icon":"🤲","label":"Sandbox"}]},
+{"scene":"flow","text":"Passwords stay outside. A gateway adds them to requests, so the agent never sees them.","title":"Secrets stay out","steps":[{"icon":"🤖","label":"Agent"},{"icon":"🛂","label":"Gateway"},{"icon":"🔑","label":"Adds secret"},{"icon":"🌐","label":"Service"}]},
+{"scene":"compare","text":"So even a confused agent cannot leak what it never had.","title":"Why it helps","left":{"icon":"⚠️","label":"Before","points":["Keys inside","Agent can leak them"]},"right":{"icon":"✅","label":"Now","points":["Keys outside","Nothing to leak"]}},
+{"scene":"bullets","text":"It is not available yet. Google plans a preview in the coming months, with no price announced.","title":"Status","points":[{"icon":"⏳","text":"Preview coming"},{"icon":"💲","text":"No price yet"},{"icon":"☁️","text":"Google Cloud only"}]}
+]}

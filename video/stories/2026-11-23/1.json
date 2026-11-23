@@ -1,0 +1,8 @@
+{"lines":[
+{"scene":"title","text":"Researchers sent two million prompts to AI services, each hiding a fake secret.","kicker":"AI privacy test","big":"2M","emoji":"🐤","note":"fake secrets planted","tone":"accent"},
+{"scene":"flow","text":"Many apps send prompts through AI routers, which pass them along to resellers and hosting providers.","title":"Where your prompt travels","steps":[{"icon":"📱","label":"Your app"},{"icon":"🔀","label":"AI router"},{"icon":"🏪","label":"Reseller"},{"icon":"🖥️","label":"Host"}]},
+{"scene":"cards","text":"Each fake secret was a canary: if anyone used it, the researcher would know who leaked it.","title":"The canary trick","items":[{"icon":"🔑","label":"Fake AWS key","sub":"Used only once","stamp":"CANARY","tone":"amber"}]},
+{"scene":"stats","text":"At least three hosting providers were broken into, and the stolen keys were used tens of thousands of times.","title":"What he found","items":[{"value":3,"label":"providers hacked","tone":"red"}]},
+{"scene":"compare","text":"Some providers ignored privacy labels. A Zero Data Retention tag did not stop prompts from being read.","title":"The label vs reality","left":{"icon":"🏷️","label":"Promised","points":["Zero data retention","No collection"]},"right":{"icon":"👀","label":"Found","points":["Prompts scraped","Secrets reused"]}},
+{"scene":"bullets","text":"Never paste secrets into prompts, and prefer big providers you have a direct contract with.","title":"Takeaways","points":[{"icon":"🚫","text":"No secrets in prompts"},{"icon":"📝","text":"Pick direct providers"},{"icon":"🔍","text":"Don't trust labels alone"}]}
+]}
