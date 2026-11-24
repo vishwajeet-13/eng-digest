@@ -1,0 +1,10 @@
+{"lines":[
+{"scene":"title","text":"How does DoorDash pick which driver gets your order?","kicker":"DoorDash","big":"Who delivers?","emoji":"🛵"},
+{"scene":"compare","text":"The closest driver isn't always best. Food takes time to cook, and nearby orders can share a trip.","title":"Not just distance","left":{"icon":"📍","label":"Closest driver","points":["2 min away","Food needs 15 min"]},"right":{"icon":"⏱️","label":"Best timing","points":["Farther away","Arrives as food is ready"]}},
+{"scene":"stats","text":"The old single program struggled. At peak, demand reached nearly four times what it could handle.","title":"Old engine at peak","items":[{"value":4,"suffix":"x","label":"demand vs capacity","tone":"red"}]},
+{"scene":"flow","text":"So DoorDash split the job. A coordinator tracks the situation and hands heavy math to many workers.","title":"Boss and workers","steps":[{"icon":"🧭","label":"Coordinator"},{"icon":"🗺️","label":"Local groups"},{"icon":"⚙️","label":"Workers"},{"icon":"✅","label":"Combine"}]},
+{"scene":"cards","text":"Each worker gets only the local data it needs, and a final step joins the answers across borders.","title":"Key ideas","items":[{"icon":"📦","label":"Sharding","sub":"small pieces of data"},{"icon":"🔗","label":"Reconcile","sub":"join local answers"}]},
+{"scene":"flow","text":"Before going live, the new engine ran in shadow mode, making decisions that were only recorded.","title":"Safe rollout","steps":[{"icon":"👻","label":"Shadow mode"},{"icon":"🔀","label":"Experiments"},{"icon":"🚀","label":"Full rollout"}]},
+{"scene":"stats","text":"The result: ten times the processing scale, and over 99.96 percent of runs finished in under 20 seconds.","title":"Results","items":[{"value":10,"suffix":"x","label":"dispatch scale","tone":"green"},{"value":99.96,"suffix":"%","label":"runs under 20 s","tone":"green"}]},
+{"scene":"bullets","text":"The lesson: to scale, split the problem sensibly, not just add servers.","title":"Takeaways","points":[{"icon":"✂️","text":"Split the problem smartly"},{"icon":"👻","text":"Test new systems in shadow"}]}
+]}

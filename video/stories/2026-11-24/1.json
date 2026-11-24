@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"A bug left some DNS changes unpublished for hours, and nothing looked wrong.","kicker":"Cloudflare","big":"Silent bug","emoji":"🔇","tone":"red"},
+{"scene":"cards","text":"DNS is the internet's phone book. It turns a name into an address.","title":"What is DNS?","items":[{"icon":"📖","label":"DNS","sub":"names to addresses"}]},
+{"scene":"stats","text":"Cloudflare already ran hundreds of millions of tests a day with a tool called Flamingo.","title":"Flamingo","items":[{"value":100,"suffix":"M+","label":"tests a day","tone":"accent"}]},
+{"scene":"flow","text":"They taught Flamingo to check DNS. It updates a record, then asks for it from every data center.","title":"The DNS probe","steps":[{"icon":"✏️","label":"Update record"},{"icon":"🌍","label":"Ask everywhere"},{"icon":"⏱️","label":"Check freshness"}]},
+{"scene":"stats","text":"The answer must be fresh within 90 seconds from name servers, and 600 seconds from the public resolver.","title":"Time limits","items":[{"value":90,"suffix":" s","label":"name servers","tone":"green"},{"value":600,"suffix":" s","label":"public resolver","tone":"amber"}]},
+{"scene":"flow","text":"If the numbers get worse in a test data center, the release can stop or roll back automatically.","title":"Decide automatically","steps":[{"icon":"🧪","label":"Test site"},{"icon":"📊","label":"Probes"},{"icon":"🛑","label":"Stop or roll back"}]},
+{"scene":"bullets","text":"The takeaway: test the way customers see your system, all the time, everywhere.","title":"Takeaways","points":[{"icon":"🌍","text":"Test from everywhere"},{"icon":"🤖","text":"Let results gate releases"}]}
+]}
