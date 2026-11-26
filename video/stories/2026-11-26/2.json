@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"A crafted web request let an attacker run commands on Hex.pm's servers.","kicker":"Hex.pm","big":"69 requests","emoji":"📦","tone":"red"},
+{"scene":"cards","text":"Hex.pm is where Elixir and Erlang programmers download code libraries.","title":"What is Hex.pm?","items":[{"icon":"📦","label":"Package registry","sub":"a store for code"}]},
+{"scene":"flow","text":"The site unpacked data from strangers. A fake object in it caused an error.","title":"Step one","steps":[{"icon":"📨","label":"Crafted request"},{"icon":"🧩","label":"Fake object"},{"icon":"💥","label":"Error"}]},
+{"scene":"flow","text":"Error logging then looked inside the object, and that ran code the attacker had chosen.","title":"Step two","steps":[{"icon":"📝","label":"Log the error"},{"icon":"🔎","label":"Inspect object"},{"icon":"⌨️","label":"Their code runs"}]},
+{"scene":"stats","text":"Hex.pm blocked the traffic and shipped a fix in about 20 minutes.","title":"Fast response","items":[{"value":20,"suffix":" min","label":"to fix","tone":"green"}]},
+{"scene":"compare","text":"No package changes were found, but data like email addresses and password hashes may have been read.","title":"Damage","left":{"icon":"❓","label":"Maybe read","points":["Emails","Password hashes","2FA secrets"]},"right":{"icon":"✅","label":"Not found","points":["Changed packages"]}},
+{"scene":"bullets","text":"If you use Hex, change your password, reset 2FA and update your client.","title":"What to do","points":[{"icon":"🔑","text":"Change password"},{"icon":"📱","text":"Reset 2FA"},{"icon":"⬆️","text":"Update client"}]}
+]}

@@ -1,0 +1,10 @@
+{"lines":[
+{"scene":"title","text":"Researchers took over five US Treasury web addresses for about three dollars each.","kicker":"Intruder","big":"$3 each","emoji":"🏛️","tone":"red"},
+{"scene":"cards","text":"DNS is the internet's phone book. A record points a website name to a numbered address.","title":"What is DNS?","items":[{"icon":"📖","label":"DNS record","sub":"name to address"}]},
+{"scene":"compare","text":"If a company drops a rented address but forgets the record, the name still points there.","title":"The forgotten record","left":{"icon":"🗑️","label":"Company drops address","points":["Record stays","Name still points"]},"right":{"icon":"🧹","label":"Safe way","points":["Delete record first","Then drop address"]}},
+{"scene":"flow","text":"The researchers rented addresses from AWS, checked them against a list of names, and released misses.","title":"The loop","steps":[{"icon":"☁️","label":"Rent 25"},{"icon":"🔍","label":"Check names"},{"icon":"✅","label":"Keep matches"},{"icon":"♻️","label":"Release rest"}]},
+{"scene":"stats","text":"In 48 hours they went through 450,000 addresses and took over 28 live ones.","title":"48 hours","items":[{"value":450000,"label":"addresses tried","tone":"accent"},{"value":28,"label":"takeovers","tone":"red"}]},
+{"scene":"cards","text":"Five were treasury.gov subdomains. A real .gov name makes a phishing page look trustworthy.","title":"Real targets","items":[{"icon":"🏛️","label":"treasury.gov","sub":"5 subdomains","stamp":"TAKEN","tone":"red"}]},
+{"scene":"compare","text":"AWS banned the account, but the addresses moved to a new account. AWS said it plans no change.","title":"The ban","left":{"icon":"🚫","label":"Account banned","points":["All regions blocked"]},"right":{"icon":"🔁","label":"Moved over","points":["New account, same org"]}},
+{"scene":"bullets","text":"Delete DNS records the moment you stop using an address.","title":"Takeaway","points":[{"icon":"🧹","text":"Clean up DNS"},{"icon":"👀","text":"Audit old records"}]}
+]}
