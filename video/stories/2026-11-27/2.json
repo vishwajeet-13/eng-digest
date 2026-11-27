@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"OpenAI and Cisco made a temporary shield for servers waiting on a patch.","kicker":"Shirudo","big":"Live shield","emoji":"🛡️"},
+{"scene":"compare","text":"Patching can take days or weeks. Blocking an action outright could also break normal requests.","title":"The problem","left":{"icon":"⏳","label":"Wait for patch","points":["Days or weeks","Server exposed"]},"right":{"icon":"🛡️","label":"Shield","points":["Blocks the attack","Normal use continues"]}},
+{"scene":"cards","text":"Shirudo uses eBPF, which runs tiny, checked programs inside the Linux core.","title":"Key idea","items":[{"icon":"🐧","label":"eBPF","sub":"small safe programs in Linux"}]},
+{"scene":"flow","text":"A shield is tested first, approved by an operator, then loaded without restarting.","title":"How it works","steps":[{"icon":"🧪","label":"Test"},{"icon":"✅","label":"Approve"},{"icon":"🚀","label":"Load live"}]},
+{"scene":"cards","text":"Shields are signed and checked, and a hardware chip keeps a record of what was loaded.","title":"Trust","items":[{"icon":"✍️","label":"Signed"},{"icon":"🔒","label":"TPM record"}]},
+{"scene":"stats","text":"In a test, a shield made by Codex blocked an attack on Elasticsearch, which kept running.","title":"The test","items":[{"value":0,"label":"restarts needed","tone":"green"}]},
+{"scene":"bullets","text":"The takeaway: protect the gap between finding a bug and patching it.","title":"Takeaways","points":[{"icon":"🛡️","text":"Shield first, patch next"},{"icon":"🔓","text":"Open source, shared"}]}
+]}

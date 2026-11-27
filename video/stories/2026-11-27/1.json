@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"AWS Lambda just doubled how long one run can last.","kicker":"AWS Lambda","big":"30 minutes","emoji":"⏱️"},
+{"scene":"cards","text":"Lambda runs your code without you managing any servers. Each run has a time limit.","title":"What is Lambda?","items":[{"icon":"⚡","label":"Lambda","sub":"run code, no servers"}]},
+{"scene":"compare","text":"The limit was 15 minutes since 2018. Now it is 30, with a simple setting change.","title":"The new limit","left":{"icon":"⏳","label":"Before","points":["15 minutes","Since 2018"]},"right":{"icon":"⏱️","label":"Now","points":["30 minutes","No opt-in, same price"]}},
+{"scene":"cards","text":"AWS says AI agent requests, video conversion, simulations and big reports were outgrowing 15 minutes.","title":"Who needs it","items":[{"icon":"🤖","label":"AI agents"},{"icon":"🎞️","label":"Video"},{"icon":"📊","label":"Reports"}]},
+{"scene":"stats","text":"Longer runs need more capacity. One request a second at 30 minutes each needs 1,800 runs at once.","title":"Capacity check","items":[{"value":1800,"label":"runs at once","tone":"amber"}]},
+{"scene":"flow","text":"Check what surrounds the function too, like queue wait times, retries and cost.","title":"Check around it","steps":[{"icon":"📬","label":"Queue wait"},{"icon":"🔁","label":"Retries"},{"icon":"💰","label":"Cost"}]},
+{"scene":"bullets","text":"The takeaway: more time is useful, but it is not a fix for slow code.","title":"Takeaways","points":[{"icon":"🔍","text":"Check queues and capacity"},{"icon":"🐢","text":"Don't hide slow code"}]}
+]}
