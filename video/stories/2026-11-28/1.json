@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"DoorDash rebuilt the system that picks your driver, and it now handles ten times more.","kicker":"DoorDash dispatch","big":"10x","emoji":"🛵"},
+{"scene":"cards","text":"Dispatch decides which driver picks up which order.","title":"What is dispatch?","items":[{"icon":"🍔","label":"Orders"},{"icon":"🛵","label":"Drivers"},{"icon":"🧠","label":"Dispatch","sub":"matches them"}]},
+{"scene":"compare","text":"The old engine did everything in one big program. At peak, demand was about four times what it could process.","title":"The problem","left":{"icon":"🐌","label":"Before","points":["One big program","Slow math at peak"]},"right":{"icon":"⚡","label":"After","points":["Two parts","10x throughput"]}},
+{"scene":"flow","text":"A coordinator keeps the big picture and splits the map into small areas. Workers solve each area in parallel.","title":"How it works","steps":[{"icon":"🧭","label":"Coordinator"},{"icon":"🗺️","label":"Split map"},{"icon":"👷","label":"Workers"},{"icon":"🧩","label":"Combine"}]},
+{"scene":"cards","text":"DoorDash first ran the new system quietly beside the old one, and compared the answers.","title":"Safe rollout","items":[{"icon":"👥","label":"Shadow testing","sub":"compare before switching"}]},
+{"scene":"stats","text":"During Super Bowl Sunday, the new platform stayed available more than 99.99 percent of the time.","title":"The result","items":[{"value":99.99,"suffix":"%","label":"availability at peak","tone":"green"}]},
+{"scene":"bullets","text":"The takeaway: keep the memory in one place, and spread the heavy thinking across helpers.","title":"Takeaways","points":[{"icon":"🧭","text":"Coordinator holds the state"},{"icon":"👷","text":"Workers do the math"},{"icon":"🧪","text":"Test in shadow first"}]}
+]}

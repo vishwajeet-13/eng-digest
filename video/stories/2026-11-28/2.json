@@ -1,0 +1,9 @@
+{"lines":[
+{"scene":"title","text":"Hackers hid a card-stealing script on five online stores just before Black Friday.","kicker":"Card skimmer","big":"5 stores","emoji":"💳","tone":"red"},
+{"scene":"flow","text":"The script got in through a marketing tracker, a cookie-banner setting, or a file on a store's own network.","title":"Getting in","steps":[{"icon":"📊","label":"Tracker"},{"icon":"🍪","label":"Cookie banner"},{"icon":"📁","label":"CDN file"}]},
+{"scene":"cards","text":"It used WebRTC, the browser feature behind video calls. Security tools often watch it less closely.","title":"The sneaky channel","items":[{"icon":"📹","label":"WebRTC","sub":"video-call tech","tone":"amber"}]},
+{"scene":"flow","text":"At phone checkout, the script loaded itself, copied the card details, and sent them out the same hidden way.","title":"What it did","steps":[{"icon":"📱","label":"Phone checkout"},{"icon":"📥","label":"Script loads"},{"icon":"💳","label":"Copies card"},{"icon":"📤","label":"Sends out"}]},
+{"scene":"stats","text":"It ran only on phone-sized screens, so desktop checks would miss it. All five stores removed it on 24 or 25 November.","title":"Where it hid","items":[{"value":5,"label":"stores affected","tone":"red"}]},
+{"scene":"compare","text":"Site owners can set a rule listing only the hosts a payment page may contact. That blocks the script from arriving.","title":"The fix","left":{"icon":"🚪","label":"Open","points":["Any third-party script","Hidden channel"]},"right":{"icon":"🔒","label":"Locked","points":["Allowed hosts only","No script arrives"]}},
+{"scene":"bullets","text":"The takeaway: keep third-party scripts off payment pages, and check your card statements.","title":"Takeaways","points":[{"icon":"🚫","text":"No trackers at checkout"},{"icon":"🧾","text":"Check your statements"}]}
+]}
